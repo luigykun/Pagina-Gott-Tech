@@ -6,20 +6,13 @@
     font-family: sans-serif;
 }
 
-:root {font-size: 16px;}
-
 html{
     background-color: whitesmoke;
-    font-size: 1rem;
-    height: 100%;
 
 }
 
-body, header, main, footer {
-    border: 3px #da291c solid;
-    margin: 0.5rem;
-    min-height: 50px;
-    min-width: 600px;
+header, main, footer {
+    border: 2px #0e01f7 solid;
 }
 
 /* colores generales
@@ -38,39 +31,34 @@ PANTONE: PMS 109 C
 
 .header-info {
     display: flex;
-    flex-direction: row;
     justify-content: right;
     list-style: none;
-    background-color: rgb(70, 70, 61);
+    background-color: black;
     color: white;
     font-weight: bold;
-    position: sticky;  /**Solo se desplaza en el header*/
-    top: 0px;
+    /*position: sticky;  *Solo se desplaza en el header*/
 }
 
-/*.header-menubar {
-    display: flex;
-    flex-direction: row;
-    padding-left: 100px;
-    padding-right: 100px;
-} CLASS ELIMINADO*/
 
-.divmenu {
-    display: flex;
-    flex-direction: row;
-    
-}
 
-header div a {
+.header-info li a {
     text-decoration: none; /*quita el subrrayado a los hipervinculos*/
 }
 .header-info-text {
     font: color white;
+    padding: 0 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
 }
 
 nav {
-    background-color: #89d4cf;
-    background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
+    background-color: black;
+    /*background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);*/
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -80,7 +68,6 @@ nav {
 
 nav ul {
     list-style-type: none;
-    
     /*font-style: normal;*/
     font-weight: bold;
     display: flex;
@@ -92,105 +79,118 @@ nav ul {
 }
 
 nav ul li {
-    padding-left: 25px;
-    padding-right: 25px;  
-      color: white;
+    text-decoration: none;
 }
 
-main{
-    min-height: 100px;
+nav ul li a {
+    text-decoration: none;
+    padding:0 1rem;
+    color: white;
+    font-size: 1.3rem;
 }
 
+nav ul li a:hover {
+    background: cornflowerblue;
+}
+/*-----------------------------------------------------MAIN---------------------------------------------*/
+.carrusel {
+    display: flex;
+    justify-content: center;
+}
 .cards {
-    margin:0 auto;
+    padding: 0 1rem;
     display: flex;
     flex-direction: row; /*predeterminado row*/
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
 .box{
-    background-color: #ffcd00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     height: 8rem;
     width: 30rem;
+    background-color: #ffcd00;
+    margin: 1rem 0;
+    
+    border-radius: 10px;
+   
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }
 
-/*.navmenus {
-    display: flex;
-    flex-wrap: row wrap;
-    justify-content: center;
-    padding-left: 150px;
-    padding-right: 150px;
-
-}  CLASS ELIMINADO */ 
-
 .col-hard {
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     
 }
 
 aside{
     border: #da291c solid;
+    width: 40%;
+}
+
+aside img {
+    width: 100%;
 }
 
 .col-articulosvarios {
-    margin:0 auto;
+    width: 60%;
     display: flex;
-    display: inline-block;
     flex-direction: column; /*predeterminado row*/
     flex-wrap: wrap;
     justify-content:center;
     align-content: center;
-    max-width: 36em;
-    min-width: 35em;
-    border: #da291c solid
-    ;
+    border: 2px#2cbc79 solid;
 }
 
 .aavv{
+    border: red solid;
     display: flex;
     flex-direction: column;
     margin: auto;
-    width:36em;
+    width: 60%;
     justify-content: center;
+}
+
+.aavv img {
+    width: 100%;
 }
 
 footer {
     display: flex;
     display: block;
-    background-color:  rgb(70, 70, 61);
+    background-color: black;
 }
 
 section {
+    width: 100%;
+    padding: 1% 8%;
     list-style-type: none;
     display: flex;
-    flex-direction: row; /*predeterminado row*/
     flex-wrap: wrap;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     color: whitesmoke;
-    justify-content: center;
-    padding: 0% 2% 0%;
+    justify-content: space-evenly;
+}
+
+.col-footer_colum {
+    /*border:solid #da291c;*/
+    display:flex;
+    display: inline;
+    justify-content: space-evenly;
+    min-width: 15rem;
+    width: 20%;
+    height: 17rem;
 }
 
 section div iframe {
-    padding: 0;
     height: 100%;
     width: 100%;
-}
-.col-footer_colum {
-    /*border:solid #da291c ;*/
-    display:flex;
-    display: inline-block;
-    justify-content: space-evenly;
-    min-width: 10%;
-    width: 19%;
-    margin: 3em;
 }
 
 .iconos_redes {
@@ -201,31 +201,26 @@ section div iframe {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: left;
-    padding: 0;
-    margin: 0;
 }
 
 .footerderechos {
     display: flex;
     display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    background-color:  rgb(70, 70, 61);
-    padding-left: 9%;
-    text-align: left;
-    margin: auto;
+    background-color:black;
+    text-align: center;
     border-top: 1px solid whitesmoke;
     color: whitesmoke;
-    font-size: 0.7em;
-    position: fixed;
-    bottom: 0px;
+    font-size: 0.5em;
 }
 
 .whatsapp_icon {
     position: fixed;
-    right: 0.5em;
-    bottom: 0.001em;
+    right: 1rem;
+    bottom: 1rem;
 }
-
 
 @media only screen and (max-width:700px) {
     [class*="col-"] {
@@ -243,7 +238,7 @@ section div iframe {
     a medida que se va a achicando el ancho los 3 arituculos se mueven debajo del ASIDE pero el aside queda pegado hacia la izquierda y no puedo CENTRARLO.
     En cambio los ariculos si quedan centrados todo el tiempo en su contenedor. */
 
-    .divmenu {
+    .logo {
         display: flex;
         width: 100%;
         flex-direction: column;
