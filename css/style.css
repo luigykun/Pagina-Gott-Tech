@@ -92,7 +92,7 @@ nav ul li a {
 nav ul li a:hover {
     background: cornflowerblue;
 }
-/*-----------------------------------------------------MAIN---------------------------------------------*/
+/*-------------------------------------MAIN---------------------------------------------------------------------*/
 .carrusel {
     display: flex;
     justify-content: center;
@@ -136,6 +136,7 @@ aside{
 
 aside img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .col-articulosvarios {
@@ -149,17 +150,21 @@ aside img {
 }
 
 .aavv{
-    border: red solid;
+    /*border: red solid;*/
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 60%;
     justify-content: center;
+    
 }
 
 .aavv img {
     width: 100%;
+    border-radius: 10px;
 }
+
+/*-------------------------------------FOOTER-----------------------------------------------------------------*/
 
 footer {
     display: flex;
@@ -222,6 +227,8 @@ section div iframe {
     bottom: 1rem;
 }
 
+/*---------------------------------     MEDIA QUERIES  -------------------------------------------------------*/
+
 @media only screen and (max-width:700px) {
     [class*="col-"] {
         display: flex;
@@ -233,10 +240,6 @@ section div iframe {
         margin: auto;
         
     }
-
-    /*   ASIDE  
-    a medida que se va a achicando el ancho los 3 arituculos se mueven debajo del ASIDE pero el aside queda pegado hacia la izquierda y no puedo CENTRARLO.
-    En cambio los ariculos si quedan centrados todo el tiempo en su contenedor. */
 
     .logo {
         display: flex;
