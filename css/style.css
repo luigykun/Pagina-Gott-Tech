@@ -17,16 +17,14 @@ header, main, footer {
 
 /* colores generales
 RED
-CMYK: 9 97 100 1
          HEX: #da291c
 RGB: 218 41 28
-PANTONE: PMS 485 C
+
 
 GOLD
-CMYK: 1 18 100 0
          HEX: #ffcd00
 RGB: 255 205 0
-PANTONE: PMS 109 C
+
 */
 
 .header-info {
@@ -39,11 +37,10 @@ PANTONE: PMS 109 C
     /*position: sticky;  *Solo se desplaza en el header*/
 }
 
-
-
 .header-info li a {
     text-decoration: none; /*quita el subrrayado a los hipervinculos*/
 }
+
 .header-info-text {
     font: color white;
     padding: 0 1rem;
@@ -52,57 +49,73 @@ PANTONE: PMS 109 C
 .logo {
     display: flex;
     justify-content: center;
-
     background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
+    text-align: center;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.nombre {
+    display: flex;
+   
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 nav {
     background-color: black;
-    /*background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);*/
     display: flex;
     justify-content: center;
-    flex-direction: row;
     width: 100%;
+    padding: 0.5rem 0;
     
 }
 
 nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
     list-style-type: none;
     /*font-style: normal;*/
     font-weight: bold;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    padding-left: 150px;
-    padding-right: 150px;
-    
 }
 
 nav ul li {
+    display: flex;
     text-decoration: none;
+    padding: 0 1rem;
 }
 
 nav ul li a {
+    display: flex;
     text-decoration: none;
     padding:0 1rem;
     color: white;
     font-size: 1.3rem;
+    border-radius: 10px;
 }
 
 nav ul li a:hover {
     background: cornflowerblue;
+    transition: .2s;
 }
 /*-------------------------------------MAIN---------------------------------------------------------------------*/
 .carrusel {
     display: flex;
+    width: 100%;
     justify-content: center;
+    padding: 0 1rem;
+    overflow: hidden;
 }
 .cards {
-    padding: 0 1rem;
+    padding: 10px 10px;
     display: flex;
     flex-direction: row; /*predeterminado row*/
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content:center;
 }
 
 .box{
@@ -110,53 +123,63 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 8rem;
-    width: 30rem;
+    height: 7rem;
+    width: 22rem;
     background-color: #ffcd00;
-    margin: 1rem 0;
-    
+    margin: 1rem;
+    padding: 1rem;
     border-radius: 10px;
-   
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    
 }
 
+.box:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    transition: .2s;
+}
+
+.box h5 {
+    font-weight: bold;
+
+} 
+
 .col-hard {
-    padding: 2rem;
+    border:5px palevioletred solid;
     display: flex;
     flex-wrap: wrap;
-    
+    width: 100%;
 }
 
 aside{
+    display: flex;
+    justify-content: center;
     border: #da291c solid;
     width: 40%;
 }
 
 aside img {
     width: 100%;
+
     border-radius: 10px;
 }
 
 .col-articulosvarios {
     width: 60%;
     display: flex;
-    flex-direction: column; /*predeterminado row*/
     flex-wrap: wrap;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     border: 2px#2cbc79 solid;
-}
-
-.aavv{
-    /*border: red solid;*/
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 60%;
-    justify-content: center;
+    padding: auto;
+    row-gap: 1rem;
     
+}
+.aavv{
+    border: red solid;
+    display: flex;
+    width: 67%;
+    justify-content: center; 
 }
 
 .aavv img {
@@ -229,7 +252,7 @@ section div iframe {
 
 /*---------------------------------     MEDIA QUERIES  -------------------------------------------------------*/
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:400px) {
     [class*="col-"] {
         display: flex;
         display: block;
@@ -238,39 +261,70 @@ section div iframe {
         align-content: center;
         width: 100%;
         margin: auto;
-        
+    }
+    .header-info {
+        display: none;
     }
 
-    .logo {
-        display: flex;
+    .nombre {
         width: 100%;
-        flex-direction: column;
-        display:block;
-        justify-content: center;
-        margin: auto;
+        display: block;
+        background-color: #534cda;
+        text-align: center;
+        color: white;
+        font-weight: bold;
     }
-    
-    .col-logo {
+
+    .logo img {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        
         display: flex;
-        margin: auto;
-        
-        
-        max-width: 25em;
-        justify-content:center;
-        
+        flex-flow: row wrap;
+        justify-content: flex-end;
     }
-    nav {
-        margin: auto;
+
+    nav ul li {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    nav ul li a {
+        justify-content: center;
+        width: 100%;
+        padding:0rem;
+        font-size: 1rem;
+    }
+
+    .carrusel img {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+    .col-articulosvarios {
+        width: 100%;
+        display: flex;        
     }
 }
 
-@media only screen and (min-width:700px) {
-    .col-logo {
-        display: flex;
-        margin: auto;
-        height: 7em;
-        max-width: 15em;
-        justify-content:center;
+/*---------------------------------     MEDIA QUERIES TABLET  -----------------------------------------------*/
+
+@media only screen and (max-width:1024px) {
+    aside {
+        width: 100%;
+        padding: 1rem;
+    }
+    .col-articulosvarios {
+        width: 100%;
+        display: flex;        
     }
 }
 
