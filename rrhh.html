@@ -44,44 +44,53 @@
     </header>
 
     <main>
-        <div class="carrusel">
-            <img src="./assets/Portada face 03.jpg" alt="">
-        </div>
+        <main class="formmenu">
 
-        <div class="cards">
-            <article class="box">
-                <h5>ATENCION ONLINE</h5>
-                <h5>Gott_techstore@gmail.com</h5>
-                <h5>1112345678</h5>
-            </article>
-            <article class="box">
-                <h5>ATENCION TELEFONICA</h5>
-                <h5>1112345678 (SOLO WHATSAPP)</h5>
-            </article>
-            <article class="box">
-                <h5>HORARIOS DE ATENCION</h5>
-                <h5>Lunes a Viernes de 10:00 a 13:00 y de 15:00 a 19:00Hs. Sab de 10:00 a 14:00Hs</h5>
-            </article>
-        </div>
-
-        <div class="col-hard">
-            <aside>
-                <img src="./assets/aside.jpg" alt="asidePC">
-            </aside>
-
-            <div class="col-articulosvarios">
-                <div class="aavv">
-                    <img src="./assets/procesador01.jpg" alt="procesadores">
-                </div>
-                <div class="aavv">
-                    <img src="./assets/pc01.jpg" alt="pc">
-                </div>
-                <div class="aavv">
-                    <img src="./assets/perifericos01.jpg" alt="perifericos">
-                </div>
+            <div class="form_encabezado">
+                <h2>TRABAJA CON NOSOTROS</h1>
+                <h3>Dejanos un mensaje</h2>
             </div>
+            <section class="parrafo">
+                <p> En La Fortuna, valoramos el talento y la dedicación de nuestro equipo. Si eres apasionado por la comida y la hospitalidad, y buscas un lugar donde tu creatividad pueda florecer, has llegado al lugar correcto. Únete a nosotros en nuestro viaje culinario y sé parte de una familia donde cada miembro es apreciado y respetado. Consulta nuestras oportunidades laborales y envía tu solicitud hoy para unirse a nuestro equipo excepcional.</p>
+            </section>
+            
+            <form name="fvalida">
+                
+                    <div>
+                        <label for="nom">Nombre y Apellido: </label>
+                        <input type="text" name="nombreyapellido" id="nomape" required>
+                    </div>
+    
+                    <div>
+                        <label for="dni">Edad: </label>
+                        <input type="number" name="edad" id="" min="18">
+                    </div>
+    
+                    <div>
+                        <label for="fecnac">Fecha de nacimiento: </label>
+                        <input type="date" name="fechanaciemiento" id="fecnac">
+                    </div>
+    
+                    <div>
+                        <label for="correo">E-mail: </label>
+                        <input type="email" name="email" id="correo">
+                    </div>
+                    <div class="cajacv">
+                        <div class="adjuntarcv">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <label for="btn-file">ADJUNTAR ARCHIVO CV</label>
+                            <input type="file" id="btn-file">
+                        </div>
+    
+                    </div>
+    
+                    <div>
+                        <textarea name="" id="" placeholder="Mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar datos" onclick="validarEnviar()">
+                
+            </form>
 
-        </div>
     </main>
 
     <footer>

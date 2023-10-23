@@ -27,6 +27,8 @@ RGB: 255 205 0
 
 */
 
+
+
 .header-info {
     display: flex;
     justify-content: right;
@@ -46,6 +48,9 @@ RGB: 255 205 0
     padding: 0 1rem;
 }
 
+.header-info-text a {
+    color: white;
+}
 .logo {
     display: flex;
     justify-content: center;
@@ -154,6 +159,7 @@ aside{
     justify-content: center;
     border: #da291c solid;
     width: 40%;
+    padding: 1rem;
 }
 
 aside img {
@@ -172,7 +178,6 @@ aside img {
     align-content: center;
     border: 2px#2cbc79 solid;
     padding: auto;
-    row-gap: 1rem;
     
 }
 .aavv{
@@ -180,11 +185,126 @@ aside img {
     display: flex;
     width: 67%;
     justify-content: center; 
+    padding: 1rem;
 }
 
 .aavv img {
     width: 100%;
     border-radius: 10px;
+}
+
+.formmenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.form_encabezado {
+    /*border: violet solid;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+}
+
+.formmenu section {
+    display: flex;
+    width: 40%;
+    /*border: red solid;*/
+    align-items: center;
+    padding: 2rem 1rem;
+    color: black;
+    font-size: 1.4rem;
+}
+
+main form {
+    border: thin solid #383838;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 50rem;
+    box-shadow: 8px 8px 11px 0px rgba(255, 255, 255, 0.555);
+    border: 3px outset rgb(199, 185, 123);
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+main form div {
+    /*border:rgba(39, 158, 98, 0.3) solid;*/
+    width: 100%;
+    padding: 0.3rem 0;
+
+}
+
+main form input {
+    width: 100%;
+    border: 1px #383838 solid;
+}
+
+.cajacv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 1px #383838 solid;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjuntarcv {
+    display: block;
+    flex-wrap: wrap;
+    /*position: relative;*/
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: ease-out 120ms;
+    width: 45%;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.adjuntarcv label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.adjuntarcv input[type="file"] {
+    appearance: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.adjuntarcv btn-file label {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /*-------------------------------------FOOTER-----------------------------------------------------------------*/
@@ -206,7 +326,7 @@ section {
     justify-content: space-evenly;
 }
 
-.col-footer_colum {
+.RRHH {
     /*border:solid #da291c;*/
     display:flex;
     display: inline;
@@ -214,6 +334,12 @@ section {
     min-width: 15rem;
     width: 20%;
     height: 17rem;
+    
+}
+
+.RRHH a {
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 section div iframe {
@@ -250,18 +376,12 @@ section div iframe {
     bottom: 1rem;
 }
 
-/*---------------------------------     MEDIA QUERIES  -------------------------------------------------------*/
-
-@media only screen and (max-width:400px) {
-    [class*="col-"] {
-        display: flex;
-        display: block;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        margin: auto;
+/*-------------------------A partir de aca comienza los Media Queries para Mobile--------------------------*/
+@media only screen and (max-width:600px) {
+    .cards {
+        background-color: green;
     }
+
     .header-info {
         display: none;
     }
@@ -310,14 +430,35 @@ section div iframe {
         width: 100%;
     }
     .col-articulosvarios {
-        width: 100%;
-        display: flex;        
+        width: 100%;      
     }
+
+    .aavv{
+        width: 100%;
+
+    }
+/*
+.aavv{
+    border: red solid;
+    display: flex;
+    width: 67%;
+    justify-content: center; 
 }
 
-/*---------------------------------     MEDIA QUERIES TABLET  -----------------------------------------------*/
+.aavv img {
+    width: 100%;
+    border-radius: 10px;
+}*/
 
-@media only screen and (max-width:1024px) {
+}
+
+/*-------------------A partir de aca comienza los Media Queries para TABLET VERTICAL----------------------*/
+
+@media (min-width:601px) and (max-width:768px) {
+    .cards {
+        background-color: blue;
+    }
+
     aside {
         width: 100%;
         padding: 1rem;
@@ -326,7 +467,19 @@ section div iframe {
         width: 100%;
         display: flex;        
     }
+
+    .aavv{
+        width: 100%;
+
+    }
 }
 
+/*--------------A partir de aca comienza los Media Queries para NOTEBOOK ---------------*/
+
+@media (min-width:769px) and (max-width:1280px) {
+    .cards {
+        background-color: orange;
+    }
+}
 
 /* los bordes los tengo para orientarme, a lo ulitmo los sacare */
