@@ -194,13 +194,15 @@ aside img {
 }
 
 .formmenu {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 .form_encabezado {
-    /*border: violet solid;*/
+    border: violet solid;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -213,7 +215,7 @@ aside img {
 .formmenu section {
     display: flex;
     width: 40%;
-    /*border: red solid;*/
+    border: red solid;
     align-items: center;
     padding: 2rem 1rem;
     color: black;
