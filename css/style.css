@@ -12,7 +12,7 @@ html{
 }
 
 header, main, footer {
-    border: 2px #0e01f7 solid;
+    /*border: 2px #0e01f7 solid;*/
 }
 
 /* colores generales
@@ -64,7 +64,6 @@ RGB: 255 205 0
 
 .nombre {
     display: flex;
-   
     flex-wrap: wrap;
     text-align: center;
 }
@@ -148,7 +147,7 @@ nav ul li a:hover {
 } 
 
 .col-hard {
-    border:5px palevioletred solid;
+    /*border:5px palevioletred solid;*/
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -157,7 +156,7 @@ nav ul li a:hover {
 aside{
     display: flex;
     justify-content: center;
-    border: #da291c solid;
+    /*border: #da291c solid;*/
     width: 40%;
     padding: 1rem;
 }
@@ -176,12 +175,12 @@ aside img {
     justify-content: center;
     align-items: center;
     align-content: center;
-    border: 2px#2cbc79 solid;
+    /*border: 2px#2cbc79 solid;*/
     padding: auto;
     
 }
 .aavv{
-    border: red solid;
+    /*border: red solid;*/
     display: flex;
     width: 67%;
     justify-content: center; 
@@ -202,7 +201,7 @@ aside img {
 }
 
 .form_encabezado {
-    border: violet solid;
+    /*border: violet solid;*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -215,7 +214,7 @@ aside img {
 .formmenu section {
     display: flex;
     width: 40%;
-    border: red solid;
+    /*border: red solid;*/
     align-items: center;
     padding: 2rem 1rem;
     color: black;
@@ -235,7 +234,7 @@ main form {
     align-content: center;
     width: 50rem;
     box-shadow: 8px 8px 11px 0px rgba(255, 255, 255, 0.555);
-    border: 3px outset rgb(199, 185, 123);
+    border: 3px outset black;
 }
 
 textarea {
