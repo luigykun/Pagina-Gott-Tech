@@ -283,10 +283,20 @@ main form input {
     align-items: center;
 }
 
+.adjuntarcv:hover {
+    transform: scale(1.01);
+    box-shadow: 10px 10px 37px black;
+    background: cornflowerblue;
+    color: black;
+    font-weight: bold;
+}
+
 .adjuntarcv label {
     display: flex;
     justify-content: center;
     width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .adjuntarcv input[type="file"] {
