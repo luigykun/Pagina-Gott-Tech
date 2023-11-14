@@ -144,12 +144,25 @@ nav ul li a:hover {
     display: block;
     background-color: white;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     text-align: center;
     padding:1rem;
     width: 25rem;
-    height: 20rem;
-    border: red solid;
+    height: 17rem;
+   /* border: red solid;*/
+    margin: 1rem 1rem;
 
+}
+
+.parteshard div {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 13rem;
 }
 
 .parteshard img {
