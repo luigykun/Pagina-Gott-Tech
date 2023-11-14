@@ -1,29 +1,27 @@
 let header = `
-
 <div class="header-info">
             <li class="header-info-text"><a href="https://www.google.com.ar/maps">Av.Rivadavia 1234, CABA </a></li>
             <li class="header-info-text">1123456789 (SOLO WHATSAPP)</li>
             <li class="header-info-text">Atencion al cliente</li>
-</div>
+        </div>
 
-<div class="logo">
-                <div><img src="./assets/logo01.jpg" alt="fotologo"></div>
+        <nav>
+            <div class="logo"><img src="./assets/logo__1_-removebg-preview.png" alt=""></div>
+            <div class="nombrelog">
                 <div class="nombre">GOTT TECH</div>
-</div>
-
-<nav>
-<ul>
+            </div>
+            <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./placasdevideo.html">Placas de Video</a></li>
                 <li><a href="./perifericos.html">Perifericos</a></li>
                 <li><a href="./procesadores.html">Procesadores</a></li>
                 <li><a href="./notebooks.html">Notebooks</a></li>
                 <li><a href="./monitores.html">Monitores</a></li>
-</ul>
-</nav>
+            </ul>
+        </nav>
 
 `
-document.getElementById("header").innerHTML = header 
+document.getElementById("header").innerHTML = header
 
 let footer = `
 
@@ -93,9 +91,9 @@ let footer = `
                     <h3><a href="./rrhh.html">Dejanos tu CV</a> </h3>
                 </li>
             </div>
-        </section>
+</section>
 
-        <div class="footerderechos">
+<div class="footerderechos">
             <h1>Gott Tech Store</h1>
             <h3>102023 GOTT_TECH</h3>
             

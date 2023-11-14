@@ -3,11 +3,11 @@
     padding: 0px;
     box-sizing: border-box; /*para que las cajas consideren a su borde como medida*/
     line-height: 1.5; /*interlineado*/
-    font-family: sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 html{
-    background-color: whitesmoke;
+    background-color: rgb(01, 06, 29);
 
 }
 
@@ -26,8 +26,6 @@ GOLD
 RGB: 255 205 0
 
 */
-
-
 
 .header-info {
     display: flex;
@@ -51,37 +49,49 @@ RGB: 255 205 0
 .header-info-text a {
     color: white;
 }
+
 .logo {
     display: flex;
-    justify-content: center;
-    background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
-    text-align: center;
+    flex-wrap: wrap;
+    width: 6rem;
 }
 
 .logo img {
-    width: 5rem;
+    width: 100%;
+}
+.nombrelog {
+    display: flex;
+    justify-content: center;
+    padding: 0 .8rem;
+    background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
+    text-align: center;
+    border-radius: 10px;
+    height: 15%;
 }
 
 .nombre {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-style: bold;
 }
 
 nav {
-    background-color: black;
+    background-color: rgb(01, 06, 29);
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0.5rem 0;
-    
+    align-items: center;
 }
 
 nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     list-style-type: none;
     /*font-style: normal;*/
     font-weight: bold;
@@ -114,6 +124,38 @@ nav ul li a:hover {
     padding: 0 1rem;
     overflow: hidden;
 }
+
+.parrafo {
+    color: white;
+    padding: 5rem 10rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 10rem;
+}
+
+.parteshard {
+    display: flex;
+    display: block;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding:1rem;
+    width: 25rem;
+    height: 20rem;
+    border: red solid;
+
+}
+
+.parteshard img {
+    width: 100%;
+}
+
 .cards {
     padding: 10px 10px;
     display: flex;
@@ -323,7 +365,7 @@ main form input {
 footer {
     display: flex;
     display: block;
-    background-color: black;
+    background-color: rgb(01, 06, 29);
 }
 
 section {
@@ -345,7 +387,7 @@ section {
     min-width: 15rem;
     width: 20%;
     height: 17rem;
-    
+
 }
 
 .RRHH a {
@@ -374,7 +416,7 @@ section div iframe {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    background-color:black;
+    background-color:rgb(01, 06, 29);
     text-align: center;
     border-top: 1px solid whitesmoke;
     color: whitesmoke;
