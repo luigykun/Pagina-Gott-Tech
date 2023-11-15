@@ -13,11 +13,11 @@ let header = `
 
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./placasdevideo.html">Placas de Video</a></li>
-                <li><a href="./perifericos.html">Perifericos</a></li>
                 <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./notebooks.html">Notebooks</a></li>
+                <li><a href="./perifericos.html">Motherboard</a></li>
+                <li><a href="./placasdevideo.html">Placas de Video</a></li>
                 <li><a href="./monitores.html">Monitores</a></li>
+                <li><a href="./notebooks.html">Notebooks</a></li>
             </ul>
         </nav>
 
@@ -77,7 +77,7 @@ let footer = `
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="RRHH">
+            <div class="col-footer_colum">
                 <li>
                     <h2>NEWSLETTER</h2>
                 </li>
