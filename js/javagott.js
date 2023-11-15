@@ -1,27 +1,33 @@
 let header = `
 <div class="header-info">
-            <li class="header-info-text"><a href="https://www.google.com.ar/maps">Av.Rivadavia 1234, CABA </a></li>
-            <li class="header-info-text">1123456789 (SOLO WHATSAPP)</li>
-            <li class="header-info-text">Atencion al cliente</li>
-        </div>
+<li class="header-info-text"><a href="https://www.google.com.ar/maps">Av.Rivadavia 1234, CABA </a></li>
+<li class="header-info-text">1123456789 (SOLO WHATSAPP)</li>
+<li class="header-info-text">Atencion al cliente</li>
+</div>
 
-        <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn"><img src="./assets/icono_menu.png" alt="iconomenu"></label>
-            <div class="logo"><img src="./assets/logo__1_-removebg-preview.png" alt=""></div>
-                <div class="nombrelog">
-                <a href="./index.html"><p class="nombre">GOTT TECH</p></a>
-                </div>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn"><img src="./assets/icono_menu.png" alt="iconomenu"></label>
+<div class="logo">
+    <img src="./assets/logo__1_-removebg-preview.png" alt="">
+    <div class="nombrelog">
+        <a href="./index.html">
+            <p class="nombre">GOTT TECH</p>
+        </a>
+    </div>
+</div>
 
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./perifericos.html">Motherboard</a></li>
-                <li><a href="./placasdevideo.html">Placas de Video</a></li>
-                <li><a href="./monitores.html">Monitores</a></li>
-                <li><a href="./notebooks.html">Notebooks</a></li>
-            </ul>
-        </nav>
+
+<ul>
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./procesadores.html">Procesadores</a></li>
+    <li><a href="./perifericos.html">Motherboard</a></li>
+    <li><a href="./placasdevideo.html">Placas de Video</a></li>
+    <li><a href="./monitores.html">Monitores</a></li>
+    <li><a href="./notebooks.html">Notebooks</a></li>
+</ul>
+</nav>
+
 
 `
 document.getElementById("header").innerHTML = header
@@ -108,3 +114,47 @@ let footer = `
 
 `
 document.getElementById("footer").innerHTML = footer
+
+//-------------------------------Validacion de Formulario
+
+function validarEnviar() {
+    if (document.fvalida.nombreyapellido.value.length == 0) {
+        alert("Tiene que escribir su nombre")
+        document.fvalida.nombreyapellido.focus()
+        return 0
+    }
+  
+    //valido la edad. tiene que ser entero mayor que 18
+    edad = document.fvalida.edad.value
+    edad = validarEntero(edad)
+    document.fvalida.edad.value = edad
+    if (edad == "") {
+        alert("Tiene que introducir un número entero en su edad.")
+        document.fvalida.edad.focus()
+        return 0
+    } else {
+        if (edad < 18) {
+            alert("Debe ser mayor de 18 años.")
+            document.fvalida.edad.focus()
+            return 0
+        }
+    }
+    
+    alert("Muchas gracias por enviar el formulario")
+    document.fvalida.submit()
+  }
+  
+  function validarEntero(valor) {
+    //intento convertir a entero.
+    //si era un entero no le afecta, si no lo era lo intenta convertir
+    valor = parseInt(valor)
+  
+    //Compruebo si es un valor numérico
+    if (isNaN(valor)) {
+        //entonces (no es numero) devuelvo el valor cadena vacia
+        return ""
+    } else {
+        //En caso contrario (Si era un número) devuelvo el valor
+        return valor
+    }
+  }
