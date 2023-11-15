@@ -7,11 +7,9 @@ let header = `
 
         <nav>
             <div class="logo"><img src="./assets/logo__1_-removebg-preview.png" alt=""></div>
-            <a href="./index.html">
                 <div class="nombrelog">
-                    <div class="nombre">GOTT TECH</div>
+                <a href="./index.html"><p class="nombre">GOTT TECH</p></a>
                 </div>
-            </a>
 
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
