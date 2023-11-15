@@ -6,6 +6,8 @@ let header = `
         </div>
 
         <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><img src="./assets/icono_menu.png" alt="iconomenu"></label>
             <div class="logo"><img src="./assets/logo__1_-removebg-preview.png" alt=""></div>
                 <div class="nombrelog">
                 <a href="./index.html"><p class="nombre">GOTT TECH</p></a>

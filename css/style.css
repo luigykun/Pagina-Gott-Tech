@@ -50,23 +50,38 @@ RGB: 255 205 0
     color: white;
 }
 
+.checkbtn {
+    display: none;
+    overflow: hidden;
+    height: 3rem;
+    float: right;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
 .logo {
+    border: red solid;
     display: flex;
     flex-wrap: wrap;
-    width: 5rem;    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 25rem;
 }
 
 .logo img {
-    width: 100%;
+    width: 20%;
 }
 .nombrelog {
     display: flex;
     justify-content: center;
-    padding: 0 .8rem;
+    width: 15rem;
     background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
     text-align: center;
     border-radius: 10px;
-    height: 15%;
     list-style: none;
 }
 
@@ -459,6 +474,28 @@ section div iframe {
 
 /*-------------------------A partir de aca comienza los Media Queries para Mobile--------------------------*/
 @media only screen and (max-width:600px) {
+    .checkbtn {
+        display: flex;
+        position: fixed;
+        top: 15px;
+        left: 6px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 82px;
+        width: 100%;
+        height: 30%;
+        background-color: black;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
     .cards {
         background-color: green;
     }
@@ -468,21 +505,37 @@ section div iframe {
     }
 
     .nombre {
-        width: 100%;
-        display: block;
-        background-color: #534cda;
-        text-align: center;
-        color: white;
         font-weight: bold;
+        font-size: 1.5rem;
     }
 
+    .logo {
+        width:100%;
+        justify-content: center;
+    }
+    
     .logo img {
-        display: none;
+        width: 15%;
+    }
+    .nombrelog {
+        display: flex;
+        justify-content: center;
+        width: 15rem;
+        background-color: #534cda;
+        text-align: center;
+        border-radius: 10px;
+        list-style: none;
+    }
+
+    nav {
         width: 100%;
+        display: block;
+        padding: 0rem;
     }
 
     nav ul {
-        
+        border: red solid;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
