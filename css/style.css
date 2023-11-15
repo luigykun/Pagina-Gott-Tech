@@ -218,7 +218,7 @@ aside{
     display: flex;
     justify-content: center;
     /*border: #da291c solid;*/
-    width: 40%;
+    width: 35%;
     padding: 1rem;
 }
 
@@ -228,14 +228,14 @@ aside img {
 }
 
 .col-articulosvarios {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    /*border: 2px#2cbc79 solid;*/
+    border: 2px#2cbc79 solid;
     padding: auto;
     
 }
@@ -497,6 +497,37 @@ section div iframe {
         width: 100%;
     }
 
+    .parrafo {
+        
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .galeria {
+        padding: 1rem;
+    }
+    
+    .parteshard {
+        padding: .5rem;
+        width: 100%;
+        /* border: red solid;*/
+        margin: 1rem;
+    }
+    
+    .parteshard div {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 13rem;
+    }
+
+    .parteshard img {
+        width: 110%;
+    }
+
     aside {
         width: 100%;
     }
@@ -526,6 +557,16 @@ section div iframe {
 /*-------------------A partir de aca comienza los Media Queries para TABLET VERTICAL----------------------*/
 
 @media (min-width:601px) and (max-width:768px) {
+    .header-info {
+        display: none;
+    }
+
+    .parrafo {
+        
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
+
     .cards {
         background-color: blue;
     }
