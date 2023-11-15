@@ -53,7 +53,7 @@ RGB: 255 205 0
 .logo {
     display: flex;
     flex-wrap: wrap;
-    width: 6rem;
+    width: 6rem;    
 }
 
 .logo img {
@@ -85,6 +85,10 @@ nav {
     width: 100%;
     padding: 0.5rem 0;
     align-items: center;
+}
+
+nav a {
+    list-style: none;
 }
 
 nav ul {
@@ -150,7 +154,7 @@ nav ul li a:hover {
     padding:1rem;
     width: 25rem;
     height: 17rem;
-   /* border: red solid;*/
+    /* border: red solid;*/
     margin: 1rem 1rem;
 
 }
@@ -205,7 +209,9 @@ nav ul li a:hover {
     /*border:5px palevioletred solid;*/
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    padding: 1rem 10rem;
+    justify-content: center;
+    align-items: center;
 }
 
 aside{
@@ -218,7 +224,6 @@ aside{
 
 aside img {
     width: 100%;
-
     border-radius: 10px;
 }
 

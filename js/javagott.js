@@ -7,9 +7,12 @@ let header = `
 
         <nav>
             <div class="logo"><img src="./assets/logo__1_-removebg-preview.png" alt=""></div>
-            <div class="nombrelog">
-                <div class="nombre">GOTT TECH</div>
-            </div>
+            <a href="./index.html">
+                <div class="nombrelog">
+                    <div class="nombre">GOTT TECH</div>
+                </div>
+            </a>
+
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./placasdevideo.html">Placas de Video</a></li>
