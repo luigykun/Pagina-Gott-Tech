@@ -21,7 +21,7 @@ let header = `
 <ul>
     <li><a href="./index.html">Inicio</a></li>
     <li><a href="./procesador.html">Procesadores</a></li>
-    <li><a href="./perifericos.html">Motherboard</a></li>
+    <li><a href="./motherboard.html">Motherboard</a></li>
     <li><a href="./placadevideo.html">Placas de Video</a></li>
     <li><a href="./monitores.html">Monitores</a></li>
     <li><a href="./notebooks.html">Notebooks</a></li>
