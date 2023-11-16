@@ -104,7 +104,7 @@ let footer = `
 
 <div class="footerderechos">
             <h1>Gott Tech Store</h1>
-            <h3>102023 GOTT_TECH</h3>
+            <h3>© 2023 - Todos los derechos reservados.</h3>
             
             <div class="whatsapp_icon">
                 <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img

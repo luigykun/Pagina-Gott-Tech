@@ -8,7 +8,6 @@
 
 html{
     background-color: rgb(01, 06, 29);
-
 }
 
 /* colores generales
@@ -65,7 +64,7 @@ RGB: 255 205 0
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 25rem;
+    width: 15rem;
 }
 
 .logo img {
@@ -74,8 +73,8 @@ RGB: 255 205 0
 .nombrelog {
     display: flex;
     justify-content: center;
-    width: 15rem;
-    background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
+    width: 11rem;
+    background-image: linear-gradient(50deg, #da291c 30%, #ffcd00 100%);
     text-align: center;
     border-radius: 10px;
     list-style: none;
@@ -83,18 +82,17 @@ RGB: 255 205 0
 
 .nombre {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color: white;
     font-style: bold;
     list-style: none;
 }
 
 nav {
-    background-color: rgb(01, 06, 29);
+    background-color: rgb(43, 19, 75);
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0.5rem 0;
     align-items: center;
 }
 
@@ -123,7 +121,7 @@ nav ul li a {
     text-decoration: none;
     padding:0 1rem;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 10px;
 }
 
@@ -145,7 +143,7 @@ nav ul li a:hover {
     overflow: hidden;
     width: 100%;
     z-index: -1;
-    height: 30rem;
+    height: 50rem;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -515,6 +513,10 @@ section div iframe {
 
 /*-------------------------A partir de aca comienza los Media Queries para Mobile--------------------------*/
 @media only screen and (max-width:600px) {
+    html{
+        background-color: grey;
+    }
+
     .checkbtn {
         display: flex;
         position: fixed;
@@ -538,10 +540,6 @@ section div iframe {
         transition: all .5s;
     }
 
-    .cards {
-        background-color: green;
-    }
-
     .header-info {
         display: none;
     }
@@ -557,10 +555,11 @@ section div iframe {
         width:100%;
         justify-content: center;
         background-color: black;
+        height: 60px;
     }
     
     .logo img {
-        width: 15%;
+        width: 50px;
     }
     .nombrelog {
         display: flex;
@@ -591,7 +590,6 @@ section div iframe {
         justify-content: center;
         text-align: center;
         text-decoration: none;
-
     }
 
     nav ul li a {
@@ -673,36 +671,23 @@ section div iframe {
         align-items: center;
         align-content: center;
     }
-/*
-.aavv{
-    border: red solid;
-    display: flex;
-    width: 67%;
-    justify-content: center; 
-}
-
-.aavv img {
-    width: 100%;
-    border-radius: 10px;
-}*/
 
 }
 
 /*-------------------A partir de aca comienza los Media Queries para TABLET VERTICAL----------------------*/
 
 @media (min-width:601px) and (max-width:768px) {
+    html{
+        background-color: red;
+    }
+
     .header-info {
         display: none;
     }
 
     .parrafo {
-        
         padding: 1rem 3rem;
         font-size: 1rem;
-    }
-
-    .cards {
-        background-color: blue;
     }
 
     .col-hard {
@@ -728,7 +713,7 @@ section div iframe {
 /*--------------A partir de aca comienza los Media Queries para NOTEBOOK ---------------*/
 
 @media (min-width:769px) and (max-width:1280px) {
-    .cards {
+    html{
         background-color: orange;
     }
 
