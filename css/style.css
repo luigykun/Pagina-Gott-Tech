@@ -684,6 +684,22 @@ section div iframe {
         align-content: center;
     }
 
+    .formmenu section {
+        width: 100%;
+        /*border: red solid;*/
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+
+    main form {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .adjuntarcv {
+        width: 70%;
+    }
+
 }
 
 /*-------------------A partir de aca comienza los Media Queries para TABLET VERTICAL----------------------*/
