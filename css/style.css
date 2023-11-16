@@ -11,10 +11,6 @@ html{
 
 }
 
-header, main, footer {
-    /*border: 2px #0e01f7 solid;*/
-}
-
 /* colores generales
 RED
 HEX: #da291c
@@ -524,6 +520,7 @@ section div iframe {
         position: fixed;
         top: 9px;
         left: 6px;
+        z-index: 1;
     }
 
     #check:checked~ul {
@@ -555,6 +552,8 @@ section div iframe {
     }
 
     .logo {
+        display: fixed;
+        position: fixed;
         width:100%;
         justify-content: center;
         background-color: black;
@@ -600,6 +599,10 @@ section div iframe {
         width: 100%;
         padding:0rem;
         font-size: 1rem;
+    }
+
+    main {
+        padding: 60px 0px 0px 0px;
     }
 
     .carrusel img {
