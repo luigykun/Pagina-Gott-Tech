@@ -149,6 +149,10 @@ nav ul li a:hover {
     overflow: hidden;
     width: 100%;
     z-index: -1;
+    height: 30rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .slides {
@@ -160,14 +164,15 @@ nav ul li a:hover {
 
 .slide {
     min-width: 100%;
-    height: auto;
     z-index: -1;
+    justify-content: center;
 }
 
 .slide img {
     width: 100%;
     align-items: center;
     z-index: -1;
+    justify-content: center; 
 }
 
 .parrafo {
@@ -175,6 +180,14 @@ nav ul li a:hover {
     padding: 5rem 10rem;
     font-size: 2rem;
     text-align: center;
+}
+
+.titulos {
+    color: white;
+    text-align: center;
+    /*font-weight: bold;*/
+    text-decoration: underline;
+    font-size: 2.7rem;
 }
 
 .galeria {
@@ -221,7 +234,7 @@ nav ul li a:hover {
 }
 
 .cards {
-    padding: 10px 10px;
+    padding: 4rem 1rem;
     display: flex;
     flex-direction: row; /*predeterminado row*/
     flex-wrap: wrap;
