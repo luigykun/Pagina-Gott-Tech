@@ -525,8 +525,15 @@ section div iframe {
 
 /*-------------------------A partir de aca comienza los Media Queries para Mobile--------------------------*/
 @media only screen and (max-width:600px) {
-    html{
+    /*html{
         background-color: grey;
+    }*/
+
+    .titulos {
+        /*font-weight: bold;*/
+        text-decoration: underline;
+        font-size: 1.8rem;
+        padding: .5rem;
     }
 
     .checkbtn {
@@ -688,13 +695,6 @@ section div iframe {
         align-content: center;
     }
 
-    .formmenu section {
-        width: 100%;
-        /*border: red solid;*/
-        align-items: center;
-        padding: 1rem 1.5rem;
-    }
-
     main form {
         margin: 1rem;
         padding: 1rem;
@@ -709,17 +709,26 @@ section div iframe {
 /*-------------------A partir de aca comienza los Media Queries para TABLET VERTICAL----------------------*/
 
 @media (min-width:601px) and (max-width:768px) {
-    html{
+    /*html{
         background-color: red;
-    }
+    }*/
 
     .header-info {
         display: none;
     }
 
     .parrafo {
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         font-size: 1rem;
+    }
+
+    .parrafo-index {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .slider {
+        height: 11rem;
     }
 
     .col-hard {
@@ -745,8 +754,18 @@ section div iframe {
 /*--------------A partir de aca comienza los Media Queries para NOTEBOOK ---------------*/
 
 @media (min-width:769px) and (max-width:1280px) {
-    html{
+    /*html{
         background-color: orange;
+    }*/
+
+    .parrafo {
+        padding: 1rem 5rem;
+        font-size: 2rem;
+    }
+    
+    .parrafo-index {
+        padding: 5rem;
+        font-size: 2rem;
     }
 
     .col-hard {
