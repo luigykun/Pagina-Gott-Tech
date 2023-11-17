@@ -146,7 +146,7 @@ function validarEnviar() {
         document.fvalida.nombreyapellido.focus()
         return 0
     }
-  
+
     //valido la edad. tiene que ser entero mayor que 18
     edad = document.fvalida.edad.value
     edad = validarEntero(edad)
@@ -165,13 +165,13 @@ function validarEnviar() {
     
     alert("Muchas gracias por enviar el formulario")
     document.fvalida.submit()
-  }
-  
-  function validarEntero(valor) {
+}
+
+function validarEntero(valor) {
     //intento convertir a entero.
     //si era un entero no le afecta, si no lo era lo intenta convertir
     valor = parseInt(valor)
-  
+
     //Compruebo si es un valor numérico
     if (isNaN(valor)) {
         //entonces (no es numero) devuelvo el valor cadena vacia
@@ -180,4 +180,4 @@ function validarEnviar() {
         //En caso contrario (Si era un número) devuelvo el valor
         return valor
     }
-  }
+}
