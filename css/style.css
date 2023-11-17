@@ -620,7 +620,11 @@ section div iframe {
     }
 
     .parrafo {
-        
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .parrafo-index {
         padding: 1rem 2rem;
         font-size: 1rem;
     }
